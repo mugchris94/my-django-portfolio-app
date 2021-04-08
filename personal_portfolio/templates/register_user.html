@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block page_content%}
+
+<form action="register_user" method="POST">
+
+
+<div class="col-md-4">
+<div class="form-group">
+<label for="first_name">first_name</label>
+<input class="form-control" type="text" name="first_name" placeholder="first_name"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+    <label for="last_name">last_name</label>
+    <input class="form-control" type="text" name="last_name" placeholder="last_name"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+    <label for="username">username</label>
+    <input class="form-control" type="text" name="username" placeholder="username"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+    <label for="password1">password1</label>
+    <input class="form-control" type="password1" name="password1" placeholder="password1"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+    <label for="password2">password2</label>
+    <input  class="form-control" type="password2" name="password2" placeholder="password2"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input class="form-control" type="email" name="email" placeholder="email"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<input class="btn btn-primary" type="Submit" name="submit"/>
+</div>
+
+</form>
+
+
+{% endblock %}

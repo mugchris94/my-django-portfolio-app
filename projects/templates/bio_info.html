@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_content %}
+
+<div class="row">
+
+    <div class="col-md-4">
+        
+        <table style="width:100%" class="table">
+            <tr><th>Biography</th></tr>
+            <tr><label> Names : Joe Biden</label></tr>
+            <tr><td>DOB : {{ now }}</td><tr>
+            <tr><td>Work place : @twitter.hq </td><tr>
+            <tr><td>Level : Senior Developper </td><tr>
+            <tr><td>favorite languages : python, javascript</td><tr>
+        </table>
+
+    </div>
+
+    <div class="col-md-8">
+    <img src="{% static project.image %}" alt="" width="100%"/>
+    </div>
+
+</div>
+
+{% endblock %}

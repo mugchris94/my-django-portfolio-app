@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block page_content %}
+
+<h1>u are not logged in!</h1>
+
+<table class="table" >
+<thead >
+<tr>
+    <th>#</th >
+    <th> Name </th>
+    <th> Age </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+
+    <td> 1 </td>
+    <td> Fabio </td>
+    <td> 22 </td>
+
+</tr>
+
+<tr>
+    <td> 2 </td>
+    <td> Jason </td>
+    <td> 16 </td >
+
+</tr>
+<tr>
+
+    <td> 3 </td>
+    <td> Rahela </td>
+    <td> 25 </td>
+
+</tr>
+</tbody>
+</table>
+
+<a href="{% url 'login_user' %}">you already have an account</a>
+
+{% endblock %}

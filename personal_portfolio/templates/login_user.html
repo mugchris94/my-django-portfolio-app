@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<form action="login_user" method="POST">
+
+<div class="col-md-4">
+<div class="form-group">
+<label for="username">username</label>
+<input class="form-control" type="text" name="username" placeholder="username"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="form-group">
+    <label for="password">password</label>
+    <input class="form-control" type="password" name="password" placeholder="password"/>
+</div>
+</div>
+
+<div class="col-md-4">
+<button class="btn btn-primary" type="submit">log-in</button>
+</div>
+</form>
+
+{% endblock %}
